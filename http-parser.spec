@@ -4,7 +4,7 @@
 # we use the upstream version from http_parser.h as the SONAME
 %global somajor 2
 %global sominor 6
-%global sopoint 0
+%global sopoint 1
 
 Name:           %{?scl_prefix}http-parser
 Version:        %{somajor}.%{sominor}.%{sopoint}
@@ -102,6 +102,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Feb 16 2016 Tomas Hrcka <thrcka@redhat.com> - 2.6.1-1
+- Rebase to latest upstream release
+
 * Wed Feb 10 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 2.6.0-1
 - Update to latest upstream version
 
